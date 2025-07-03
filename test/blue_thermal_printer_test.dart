@@ -5,13 +5,13 @@ void main() {
   const MethodChannel channel = MethodChannel('blue_thermal_printer');
 
   setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
+    channel.setMethodCallHandler((MethodCall methodCall) async {
       return '42';
     });
   });
 
   tearDown(() {
-    channel.setMockMethodCallHandler(null);
+    channel.setMethodCallHandler(null);
   });
 
   test('getPlatformVersion', () async {

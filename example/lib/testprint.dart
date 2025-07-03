@@ -1,4 +1,3 @@
-import 'dart:typed_data';
 import 'package:blue_thermal_printer_example/printerenum.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
